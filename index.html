@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamEase | Examination Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">🎓 ExamEase</div>
+        <p class="menu-title">MAIN MENU</p>
+
+        <button class="nav-btn active" onclick="showPage('dashboard', this)">▦ Dashboard</button>
+        <button class="nav-btn" onclick="showPage('students', this)">♙ Students</button>
+        <button class="nav-btn" onclick="showPage('examinations', this)">▤ Examinations</button>
+        <button class="nav-btn" onclick="showPage('subjects', this)">▣ Subjects</button>
+        <button class="nav-btn" onclick="showPage('marks', this)">✎ Marks Entry</button>
+        <button class="nav-btn" onclick="showPage('results', this)">▤ Results</button>
+
+        <div class="sidebar-bottom">Examination Management<br>System · 2026</div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <h1 id="page-title">Dashboard</h1>
+                <p>Welcome back, Administrator!</p>
+            </div>
+            <div class="admin">👤 Administrator</div>
+        </header>
+
+        <div id="app">
+            <div class="loading">Loading dashboard...</div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
